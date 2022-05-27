@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ context.review.book.name }}{% endblock %}
+
+{% block content %}
+
+<div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Name: {{ context.review.book.name }}</li>
+        <li class="list-group-item">Review: {{ context.review }}</li>
+    </ul>
+</div>
+
+{% endblock %}

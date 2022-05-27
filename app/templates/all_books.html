@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
+
+
 {% block title %}All books{% endblock %}
+
 {% block content %}
 <h1 class="all-books-title">All books</h1>
 <div class="img-container">
@@ -23,7 +26,6 @@
             <td>{{ book.author_name }}</td>
             <td>{{ book.price }}</td>
             <td>{{ book.year }}</td>
-{#        TODO: add fields#}
         </tr>
     {% endfor %}
     </tbody>
